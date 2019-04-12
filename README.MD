@@ -7,11 +7,10 @@ Restful CRUD API with Node.js, Express and MongoDB
  - MongoDB
  - Express 
  
-### Installation
-    npm install
+
   
 ### Deployment
-    node server.js
+    docker-compose up
     
 ### API Endpoints
 
