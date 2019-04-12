@@ -1,4 +1,4 @@
-###Node.js CRUD API
+### Node.js CRUD API
 Restful CRUD API with Node.js, Express and MongoDB
 
 ## Technologies Used
@@ -7,5 +7,5 @@ Restful CRUD API with Node.js, Express and MongoDB
  - MongoDB
  - Express 
  
-## installation
+## Installation
   run __npm install__
