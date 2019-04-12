@@ -7,5 +7,9 @@ Restful CRUD API with Node.js, Express and MongoDB
  - MongoDB
  - Express 
  
-## Installation
+### Installation
   run __npm install__
+  
+### Deployment
+run __Node server.js__
+
