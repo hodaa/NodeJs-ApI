@@ -27,6 +27,10 @@ Restful CRUD API with Node.js, Express and MongoDB
         * body: {"title":"first note","content":"hoda"}
                         
     * DELETE http://127.0.0.1:3000/notes/noteId
+    
+    
+### Test
+       sudo docker-compose run app npm test
         
    
             

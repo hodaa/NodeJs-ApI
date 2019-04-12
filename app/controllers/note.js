@@ -87,18 +87,12 @@ exports.update = (req, res) => {
 };
 // Delete a note with the specified noteId in the request
 exports.delete = (req, res) => {
-
-    if(!req.params.noteId){
-        res.status(401).send({
-            message:"Note Id not Sent"
-        })
-    }
     Note.findByIdAndDelete(req.params.noteId).then(
         note=>{
             if(!note){
                 res.send({message:"note deson not found"});
             }
-            res.send({message:"Note Deleted successfully"})
+            res.send({message:"Note successfully deleted!"})
         }
     );
 };
