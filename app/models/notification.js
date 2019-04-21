@@ -1,4 +1,4 @@
-mongoose=require('mongoose');
+import mongoose from 'mongoose'
 
 const NoteSchema = mongoose.Schema({
     title: String,
@@ -7,4 +7,4 @@ const NoteSchema = mongoose.Schema({
     timestamps: true
 });
 
-module.exports = mongoose.model('Note', NoteSchema);
+module.exports = mongoose.model('Notification', NoteSchema);

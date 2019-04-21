@@ -2,22 +2,31 @@
   "name": "Notifications",
   "version": "1.0.0",
   "description": "Notifications system",
-  "main": "server.js",
+  "main": "start.js",
   "dependencies": {
+    "apn": "^2.2.0",
     "body-parser": "^1.18.3",
     "chalk": "^2.4.2",
     "express": "^4.16.4",
-    "mongoose": "^5.5.1"
+    "fcm-node": "^1.4.0",
+    "fcm-notification": "^2.0.0",
+    "mongoose": "^5.5.1",
+    "mongoose-validator": "^2.1.0",
+    "nexmo": "^2.4.1",
+    "swagger": "^0.7.5"
   },
   "devDependencies": {
-    "mocha": "^2.5.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
     "chai": "^3.5.0",
-    "chai-http": "^2.0.1"
+    "chai-http": "^2.0.1",
+    "mocha": "^2.5.3",
+    "nodemon": "^1.18.11"
   },
   "scripts": {
     "test": "mocha --timeout 10000",
-    "start": "node server.js"
-
+    "start": "node server.js",
+    "watch": "nodemon"
   },
   "author": "hoda hussin",
   "license": "ISC"

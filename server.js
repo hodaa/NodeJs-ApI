@@ -1,5 +1,7 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+import express from 'express'
+import mongoose from 'mongoose';
+
+import bodyParser from 'body-parser';
 //
 // // create express app
 const app = express();
@@ -13,7 +15,7 @@ app.use(bodyParser.json())
 
 // Configuring the database
 const dbConfig = require('./config/database.js');
-const mongoose = require('mongoose');
+
 
 mongoose.Promise = global.Promise;
 
@@ -35,7 +37,7 @@ app.get('/', (req, res) => {
     res.json({"message": "Welcome to Notifications System."});
 });
 
-require('./app/routes/note.js')(app);
+require('./app/routes/routes.js')(app);
 
 app.on('listening',function(){
     console.log('ok, server is running');
@@ -43,6 +45,7 @@ app.on('listening',function(){
 
 // // listen for requests
 app.listen(3000, () => {
+
     console.log("Server is listening on port 3000");
 });
 module.exports = app; // for testing
